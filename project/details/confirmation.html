@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirmation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-image: url('background.jpg');">
+  <h1>Confirmation</h1>
+  <p>Thank you for booking your flight from Delhi to Bengaluru. Here are your flight details:</p>
+  <ul>
+    <li>Flight type: <strong>{{flightType}}</strong></li>
+    <li>Class type: <strong>{{classType}}</strong></li>
+    <li>Number of passengers: <strong>{{numPassengers}}</strong></li>
+    <li>Name: <strong>{{name}}</strong></li>
+    <li>Email: <strong>{{email}}</strong></li>
+    <li>Phone: <strong>{{phone}}</strong></li>
+  </ul>
+
+  <script>
+    // Get the flight details, class type, and passenger details from URL parameters
+    var urlParams = new URLSearchParams(window.location.search);
+    var flightType = urlParams.get("flightType");
+    var numPassengers = urlParams.get("numPassengers");
+    var classType = urlParams.get("classType");
+    var name = urlParams.get("name");
+    var email = urlParams.get("email");
+    var phone = urlParams.get("phone");
+
+    // Replace the placeholders in the HTML with the actual values
+    document.querySelector("ul").innerHTML = document.querySelector("ul").innerHTML
+      .replace("{{flightType}}", flightType)
+      .replace("{{classType}}", classType)
+      .replace("{{numPassengers}}", numPassengers)
+      .replace("{{name}}", name)
+      .replace("{{email}}", email)
+      .replace("{{phone}}", phone);
+  </script>
+</body>
+</html>

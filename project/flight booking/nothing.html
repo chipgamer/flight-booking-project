@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Passenger Details Form</title>
+  <style>
+    body {
+      background-image: url("C:\Users\anany\Desktop\project\Hotel Booking\aeroplane.jpg");
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      width: 400px;
+      margin: 50px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      border: none;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      border: none;
+      color: #ffffff;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    
+    .ticket {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #ffffff;
+      color: #000000;
+    }
+    
+    .ticket p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>Passenger Details Form</h1>
+    <form id="passengerForm">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="mobile" placeholder="Mobile Number" required>
+      <input type="number" name="age" placeholder="Age" required>
+      <select name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="text" name="aadhar" placeholder="Aadhar Number" required>
+      <input type="submit" value="Submit">
+    </form>
+    <div id="ticket" class="ticket" style="display: none;"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById("passengerForm");
+    const ticket = document.getElementById("ticket");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = form.elements["name"].value;
+      const email = form.elements["email"].value;
+      const mobile = form.elements["mobile"].value;
+      const age = form.elements["age"].value;
+      const gender = form.elements["gender"].value;
+      const aadhar = form.elements["aadhar"].value;
+
+      const ticketContent = `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Mobile Number:</strong> ${mobile}</p>
+        <p><strong>Age:</strong> ${age}</p>
+        <p><strong>Gender:</strong> ${gender}</p>
+        <p><strong>Aadhar Number:</strong> ${aadhar}</p>
+      `;
+
+      ticket.innerHTML = ticketContent;
+      ticket.style.display = "block";
+      form.reset();
+    });
+  </script>
+</body>
+</html>

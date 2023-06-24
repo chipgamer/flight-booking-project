@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flights from Delhi to Bengaluru</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			text-align: left;
+			padding: 8px;
+		}
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1>Flights from Delhi to Bengaluru</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Flight</th>
+				<th>Departure Time</th>
+				<th>Arrival Time</th>
+				<th>Price</th>
+				<th>Select</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>IndiGo 6E 506</td>
+				<td>07:30</td>
+				<td>09:55</td>
+				<td>Rs. 3,500</td>
+				<td>
+					<form action="D:\project\details\passenger-details.php" method="post">
+						<input type="hidden" name="flight" value="IndiGo 6E 506">
+						<label for="passengers">Passengers:</label>
+						<select id="passengers" name="passengers">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+						<input type="submit" value="Select">
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td>Air India AI 803</td>
+				<td>10:10</td>
+				<td>12:30</td>
+				<td>Rs. 4,200</td>
+				<td>
+					<form action="D:\project\details\passenger-details.php" method="post">
+						<input type="hidden" name="flight" value="Air India AI 803">
+						<label for="passengers">Passengers:</label>
+						<select id="passengers" name="passengers">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+						<input type="submit" value="Select">
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td>SpiceJet SG 104</td>
+				<td>14:45</td>
+				<td>17:05</td>
+				<td>Rs. 3,800</td>
+				<td>
+					<form action="D:\project\details\passenger-details.php" method="post">
+						<input type="hidden" name="flight" value="SpiceJet SG 104">
+						<label for="passengers">Passengers:</label>
+						<select id="passengers" name="passengers">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+						<input type="submit" value="Select">
+					</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
+
+
+
+

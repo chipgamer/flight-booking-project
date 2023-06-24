@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Flight Booking Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+</head>
+
+<body>
+  <section class="head">
+    <div class="container flex1">
+      <div class="scoial">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="logo">
+        <img src="image/logo.png" alt="">
+      </div>
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Bellandur,Bengaluru,India</span>
+      </div>
+    </div>
+  </section>
+
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo">
+          <img src="image/logo.png" alt="">
+        </div>
+
+        <ul class="nav-menu">
+          <li> <a href="#home">Home</a> </li>
+          <li> <a href="#about">about</a> </li>
+          <li> <a href="#testimonials">testimonials</a> </li>
+          <li> <a href="#gallary">gallary</a> </li>
+          <li> <a href="#shop">shop</a> </li>
+          <li> <a href="#contact">contact</a> </li>
+	  <li> <a href="1.html">login</a> </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="head_contact">
+          <i class="fas fa-phone-volume"></i>
+          <span>+91 8186989501</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+
+  <section class="home" id="home">
+    <div class="container">
+      <h1>Make Memories</h1>
+      <p>Discover the place where you have fun & enjoy a lot</p>
+
+      <div class="content grid">
+        <div class="box">
+          <span>Departure Place</span>
+        <select><option value="option 1">DELHI</option></select>
+        </div>
+        <div class="box">
+          <span>Arrival Place </span> 
+          <select><option value="option 1">BENGALURU</option></select>
+        </div>
+        <div class="box">
+          <span>No Of Passengers</span>
+          <input type="number" placeholder="01">
+        </div>
+        <div class="box">
+          <span>DATE</span><br>
+          <input type="date" placeholder="dd-mm-yy">
+        </div>
+        <div class="box">
+          <button class="flex1">
+            <span>Check Availability</span>
+		<a href="sasi.html">
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="heading">
+        <h5>EXPLORE</h5>
+        <h2>We are cool to give you pleasure
+        </h2>
+      </div>
+
+      <div class="content flex  top">
+        <div class="left">
+          <h3>As much as comfort want to get from us everything
+          </h3>
+          <p>Seating arrangements play a crucial role in passenger comfort. Airlines offer different classes of service, ranging from economy to business and first class, each with its own level of comfort. Business and first-class cabins generally provide larger seats that can recline fully or partially, providing passengers with ample legroom and space to stretch out. In contrast, economy class seats are more compact, but airlines strive to improve comfort by incorporating ergonomic designs and adjustable headrests.
+
+Legroom is another essential aspect of comfort. Ample legroom allows passengers to sit more comfortably and stretch their legs during the flight. Airlines differ in their legroom offerings, with some providing extra legroom seats for an additional fee. Passengers with long legs or those who prefer more legroom may opt for these seats to enhance their comfort during the journey.</p>
+          <button class="flex1">
+            <span a href="u.html">Check Availability</a></span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="right">
+          <img src="image/seats.jpeg" alt="" width="640" height="400">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="wrapper">
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>A charming view of the city</h3>
+          </div>
+          <p>As my gaze shifted upwards, my eyes were drawn to the towering skyscrapers that defined the city's skyline. They stood like majestic sentinels, reaching towards the heavens, their glass facades shimmering in the sunlight. Each building had its unique architectural style, a testament to the creativity and vision of human endeavor. From above, the city's skyline painted a portrait of progress and ambition, with the structures representing the dreams and aspirations of countless individuals who had contributed to the city's growth.
+
+The city's green spaces provided a striking contrast to the concrete jungle below. Parks and gardens, with their lush foliage and winding pathways, acted as serene oases amidst the urban chaos. From my elevated position, I witnessed the importance of these green lungs, providing relief to the bustling city and offering respite to its residents.</p>
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>A charming view of the city</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p> Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>A charming view of the city</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p> Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  
+
+  <section class="timer about wrapper">
+    <div class="background"> </div>
+    <div class="container">
+      <div class="heading">
+        <h5>LAST MINUTE!</h5>
+        <h2> <span>Incredible!</span> Are you coming today</h2>
+      </div>
+
+      <div id="time" class="flex1 mtop"> </div>
+    </div>
+  </section>
+  <script src="js/jquery.countdown.js" charset="utf-8"></script>
+  <script src="js/jquery.countdown.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $('#time').countdown('2024/01/01', function(event) {
+      $(this).html(event.strftime(
+        '<div class="clock"><span>%d</span> <p>Days</p></div> ' +
+        '<div class="clock"><span>%H</span> <p>Hours</p></div> ' +
+        '<div class="clock"><span>%M</span> <p>Minutes</p></div> ' +
+        '<div class="clock"><span>%S</span> <p>Seconds</p></div> '
+      ));
+    });
+  </script>
+
+  <section class="offer2 about wrapper timer top" id="shop">
+    <div class="container">
+      <div class="heading">
+        <h5>EXCLUSIVE OFFERS </h5>
+        <h3>You can get an exclusive offer </h3>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <h5>UP TO 25% OFF</h5>
+          <h3>Qatar Airlines</h3>
+          <span>4.6 <label>(2.9k Reviews)</label> </span>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 12Hours</i>
+            <i class="far fa-dot-circle"> 6+ seats</i>
+          </div>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="box">
+          <h5>UP TO 40% OFF</h5>
+          <h3>Indigo Airlines</h3>
+          <span>4.2 <label>(1.5k Reviews)</label> </span>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 10Hours</i>
+            <i class="far fa-dot-circle"> 8+ seats</i>
+          </div>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="box">
+          <h5>UP TO 50% OFF</h5>
+          <h3>AirAsia Airlines</h3>
+          <span>4.0 <label>(1.1k Reviews)</label> </span>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 24Hours</i>
+            <i class="far fa-dot-circle"> 4+ seats</i>
+          </div>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="customer top" id="testimonials">
+    <div class="container">
+      <div class="heading">
+        <h5>TESTIMONIALS </h5>
+        <h3>What customers say </h3>
+      </div>
+
+      <div class="owl-carousel owl-theme mtop">
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellent Service</h3>
+          <p>One of the standout features of the extensive range of flight options it offers. From budget airlines to premium carriers, the platform provides a wide selection of flights to suit every traveler's needs and preferences. The search results provide comprehensive details about each flight, including the airlines, layovers, duration, and fare breakdowns, enabling you to make an informed decision. Moreover, the pricing is competitive and often offers great deals and discounts, ensuring you get the best value for your money.</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/manager.jpg" alt="" width="400" height="400">
+            </div>
+            <div class="text">
+              <h3>SKAM</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellent Swimming</h3>
+          <p>The booking process is straightforward and streamlined. Once you've selected your preferred flight, the website guides you through the necessary steps, ensuring a seamless booking experience. The payment process is secure, and the website supports multiple payment options, adding to the convenience factor. I appreciate how quickly I received the booking confirmation and e-ticket, which gave me peace of mind knowing that my reservation was confirmed.</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c2.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Ayman Jensi</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellent Swimming</h3>
+          <p>Apart from booking flights, [Airline Booking Website] offers a range of additional features that enhance the overall travel experience. These include options for hotel reservations, car rentals, and even travel insurance, all conveniently accessible on the same platform. The seamless integration of these services makes it a one-stop solution for all your travel needs.</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c3.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Ayman Jensi</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="gallary top" id="gallary">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="image/s1.jpg" alt="" width="220" height="220">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/s2.jpg" alt="" width="220" height="220">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/s3.jpg" alt="" width="220" height="220">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/s4.jpg" alt="" width="220" height="220">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/s5.jpg" alt="" width="220" height="220">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/s1.jpg" alt="" width="220" height="220">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/s4.jpg" alt="" width="220" height="220">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/s3.jpg" alt="" width="220" height="220">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+  <footer>
+    <div class="container top">
+      <div class="subscribe" id="contact">
+        <h2>Subscribe newsletter</h2>
+        <div class="input flex">
+          <input type="email" placeholder="Your Email address">
+          <button class="flex1">
+            <span>Subscribe</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="logo">
+            <img src="image/logo.png" alt="">
+          </div>
+          <p>ECORIK is a company that provides air transport services for traveling passengers and/or freight. ECORIK use aircraft to supply these services and may form partnerships or alliances with other airlines for codeshare agreements, in which they both offer and operate the same flight. </p>
+          <div class="social flex">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>Prepare to travel</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Baggage</li>
+            <li><i class="fas fa-angle-double-right"></i>Airport information</li>
+            <li><i class="fas fa-angle-double-right"></i>Travel with children,pets</li>
+            <li><i class="fas fa-angle-double-right"></i>Visas & documents</li>
+            <li><i class="fas fa-angle-double-right"></i>Health & medical assistance</li>
+        </ul>
+        </div>
+
+        <div class="box">
+          <h2>Loyality</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>About flying returns</li>
+            <li><i class="fas fa-angle-double-right"></i>Points calculator</li>
+            <li><i class="fas fa-angle-double-right"></i>Earn points</li>
+            <li><i class="fas fa-angle-double-right"></i>Spend points</li>
+            <li><i class="fas fa-angle-double-right"></i>Events</li>
+            <li><i class="fas fa-angle-double-right"></i>Flying returns FAQ</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Services</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>Bellandur,Bengaluru,India</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+91 8186989501</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>hello@ecorik.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+</html>
